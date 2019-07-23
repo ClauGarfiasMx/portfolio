@@ -1,0 +1,147 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.backimg {
+    /* font-size: 10px;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url(https://claudiagarfias.works/contents/uploads/media/woman-working-web-developer-claudia-garfias.png);
+    height: 120vh;
+    background-position: center; */
+    background: url(https://claudiagarfias.works/contents/uploads/media/woman-working-web-developer-claudia-garfias.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: .9;
+}
+
+.backgrd {
+    background-image: linear-gradient(to top right, rgba(255, 89, 0, 0.658), rgba(237, 21, 86, 0.623));
+}
+
+body {
+    margin: 0;
+    color: black;
+}
+
+.soon {
+    text-align: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    background-image: none !important;
+    margin: 0px;
+    line-height: 4.25rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3a2727;
+    background-image: none !important;
+}
+
+h2.slogan {
+    color: : white !important;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: #3a2727;
+    background-image: none !important;
+}
+
+.links {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+    padding: .25rem .5rem;
+    margin: .5rem;
+    font-size: 1.25rem;
+}
+
+.links-description {
+    margin-bottom: 0 !important;
+}
+
+.github {
+    width: 2.5rem;
+    margin: 1rem;
+}
+
+
+/*.links a {
+	text-align: center;
+	margin: auto;
+}*/
+
+.profile-photo {
+    border-radius: 50%;
+    margin-bottom: 0;
+    width: 150px;
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 2rem;
+        margin: auto
+    }
+    h2 {
+        font-size: 1.45rem;
+    }
+    h2.slogan {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 1.5rem;
+        margin: 1.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.65rem;
+        margin-bottom: .5rem;
+        line-height: 1.25rem;
+    }
+    h2.slogan {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+    .catchline {
+        font-size: .5rem;
+        line-height: 1rem;
+    }
+    .catchline h2 {
+        font-size: .75rem;
+    }
+}

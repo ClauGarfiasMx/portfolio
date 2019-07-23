@@ -1,0 +1,667 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Fauna+One&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+html,
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  color: #434343;
+}
+hr {
+  border: none;
+  height: 0.055rem;
+  background-color: #b6b6b6;
+  margin: 5rem 30% 0 30%;
+}
+
+.main-container {
+  overflow-x: hidden;
+  transform: none !important;
+  margin-top: 5rem;
+}
+/*NAV*/
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-nav {
+  color: #ffff;
+  padding: 0.5rem auto 0.5rem auto;
+  width: 100%;
+  background-color: #f0efefc9;
+  height: 5rem;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+.main-nav-logo {
+  color: #ff0064;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+.main-nav-logo img {
+  max-height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.main-nav-logo-scrolled {
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.scrolled-nav {
+  height: 45px !important;
+  line-height: 45px !important;
+}
+
+.scrolled-nav div {
+  opacity: 0.9;
+}
+.scrolled-nav img {
+  height: 2rem;
+}
+
+nav {
+  padding: 0.65rem;
+}
+
+li {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.05rem;
+  padding: 0.25rem 1rem;
+  list-style-type: none;
+}
+
+li a {
+  padding: 0.25rem 1.5rem 0.25rem 0;
+  text-decoration: none;
+  color: #505050;
+  text-transform: uppercase;
+}
+
+li a:hover {
+  color: #ff0064;
+}
+
+.contact-link {
+  border: none;
+}
+.contact-menu {
+  border: none;
+}
+
+ul {
+  margin-right: 5rem;
+}
+
+p {
+  font-family: "Fauna One", serif;
+}
+q {
+  font-family: "Roboto Condensed", serif;
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.quote {
+  max-width: 50%;
+  margin: 6rem auto 1rem auto;
+  color: #ff0064;
+}
+
+h1 {
+  font-family: "Roboto Condensed", serif;
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 1;
+  margin: 0.5rem;
+}
+
+h2 {
+  font-family: "Roboto Condensed", serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.h2-styled {
+  font-family: "Roboto Condensed", serif;
+  font-size: 2rem;
+  margin: auto 0.5rem;
+  /* font-weight: 500; */
+  background: linear-gradient(to top right, #ff0064, #ee0027);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-text {
+  margin-bottom: 15%;
+}
+.hero-text h3 {
+  font-family: "Roboto Condensed", serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.35rem;
+  margin: 0 auto 2.5rem auto;
+}
+i {
+  color: #f40037;
+}
+.logo-cg {
+  width: 7rem;
+  padding: 0.25rem;
+  margin: 0rem 2rem 3rem 2rem;
+}
+
+.iam {
+  font-family: "Fauna One", serif;
+  font-size: 1.05rem;
+  margin: 1rem;
+}
+
+article {
+  height: 100vh;
+  padding-top: 5rem;
+}
+
+.down-arrow {
+  margin-top: 2rem;
+  max-height: 2.5rem;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+  cursor: pointer;
+}
+.ParallaxContainer {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-pic {
+  height: 100%;
+}
+
+.hero-text {
+  margin-right: 15%;
+}
+.hero-text h2 {
+  margin: 0 auto 2rem auto;
+}
+#content {
+  /* position: absolute; */
+  width: 100%;
+  background-color: #fff;
+}
+.flex-center {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.typewrite {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+  margin: 3rem 0.5rem;
+  font-weight: 200;
+  color: #868686;
+  text-transform: uppercase;
+}
+
+.to-contact-button {
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #ff0064,
+    #fc0055,
+    #f90046,
+    #f40037,
+    #ee0027
+  );
+  color: #fff;
+  cursor: pointer;
+  padding: 0.65rem 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: none;
+  margin-top: 0.5rem;
+  border: 1px solid #ff0064;
+}
+
+.to-contact-button:hover {
+  border: 1px solid linear-gradient(to top right, #ff0064, #ee0027);
+  /* color: linear-gradient(to top right, #ff0064, #ee0027); */
+  transform: scale(1.05) !important;
+  transition: 0.25s !important;
+  background-image: none;
+  background-color: #fff;
+  background: linear-gradient(to top right, #ff0064, #ee0027);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-me-p {
+  max-width: 50%;
+  margin: 2rem auto;
+  line-height: 1.65rem;
+}
+
+.about-me-p a {
+  text-decoration: none;
+  color: #7c7c7c;
+  border-bottom: 1px solid #b6b6b6;
+}
+
+.about-me-p a:hover {
+  color: #ff0064;
+}
+
+.portfolio {
+  /* background-color: #292929; */
+  height: auto;
+  padding: 8rem 0;
+}
+/* .portfolio div {
+  margin: 2rem auto;
+} */
+
+.project-card-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 15%;
+}
+
+.project-card {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+  text-align: center;
+}
+
+/* Common style */
+.project-card figure {
+  position: relative;
+  /* float: left; */
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  text-align: center;
+}
+
+.project-card figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.5;
+}
+
+.project-card figure figcaption {
+  padding: 1.5rem;
+  color: #fff;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.project-card figure figcaption::before,
+.project-card figure figcaption::after {
+  pointer-events: none;
+}
+
+.project-card figure figcaption,
+.project-card figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project-card figure figcaption a {
+  font-weight: 100;
+  margin-top: 1rem;
+  font-size: 1.15rem;
+  color: #fff;
+  line-height: 2rem;
+  text-decoration: none;
+  width: 100%;
+}
+figcaption a {
+  margin: 0 1rem;
+}
+.project-card figure figcaption a:hover {
+  color: #ff0064;
+}
+
+.project-link {
+  font-family: "Roboto Condensed", sans-serif !important;
+  background-color: #1f1f1fe5;
+  border: none !important;
+  width: 100%;
+}
+
+.fa-hand-pointer-o {
+  font-size: 1.1rem;
+}
+
+.project-card figure h3 {
+  font-weight: 300;
+  font-family: "Roboto Condensed", sans-serif !important;
+
+  font-size: 1.25rem;
+}
+
+.project-card figure h3 span {
+  font-weight: 600;
+}
+
+.project-card figure h3,
+.project-card figure p {
+  margin: 0;
+}
+
+.project-card figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+  margin: 0 auto.65rem auto;
+}
+
+figure.effect-milo {
+  background-image: linear-gradient(to top right, #ff0064, #ee0027);
+}
+
+figure.effect-milo img {
+  max-width: none;
+  /* width: -webkit-calc(100% + 60px);
+  width: calc(100% + 60px); */
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  /* -webkit-transform: translate3d(-30px, 0, 0) scale(1);
+  transform: translate3d(-30px, 0, 0) scale(1); */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-milo:hover img {
+  opacity: 0.1;
+  -webkit-transform: translate3d(0, 0, 0) scale(1.12);
+  transform: translate3d(0, 0, 0) scale(1.12);
+}
+
+figure.effect-milo h3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0.15em 0 0.5em 0.15em;
+  border-bottom: 1px solid #ff0064;
+  background-color: #000000de;
+  width: 100%;
+}
+
+figure.effect-milo p {
+  padding: 0 0 0 0.5rem;
+  width: 95%;
+  border-left: 1px solid #fff;
+  text-align: left;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+}
+
+figure.effect-milo:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#contact p {
+  max-width: 100% !important;
+}
+#contact h2 {
+  padding-bottom: 2rem;
+}
+
+footer {
+  font-family: "Roboto Condensed", serif;
+  color: #fff;
+  font-size: 0.85rem;
+  height: 12rem;
+  background-color: #2c2c2c;
+  font-weight: 300;
+  letter-spacing: 0.15rem;
+  padding: 10rem 1rem 5rem 1rem;
+}
+
+footer span {
+  color: #f40037;
+  font-family: "Fauna One", serif;
+  font-size: 0.8rem;
+  margin: auto 0.5rem;
+}
+
+footer p.small {
+  font-family: "Roboto Condensed", serif;
+  font-size: 0.5rem;
+  margin: 3rem auto;
+  opacity: 0.5;
+}
+
+.fa-heart {
+  font-size: 0.35rem;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-6-21 9:8:50
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  hr {
+  }
+
+  .quote {
+    margin: 3rem auto 1rem auto;
+  }
+  .typewrite {
+    font-size: 1.15rem;
+  }
+  .main-container {
+    margin-top: 0;
+  }
+  .header-menu {
+    display: none !important;
+  }
+  .profile-pic {
+    height: 600px;
+  }
+  .ParallaxContainer {
+    height: auto;
+    padding-bottom: 0;
+  }
+  article {
+    height: auto;
+    padding: 5rem 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2,
+  .h2-styled {
+    font-size: 1.75rem;
+  }
+
+  article {
+    height: auto;
+  }
+
+  .ParallaxContainer {
+    display: block;
+    height: auto;
+    /* padding-bottom: 3rem; */
+  }
+  .profile-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text {
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+
+  .iam {
+    padding-top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .down-arrow {
+    display: none;
+  }
+  .flex-center {
+    display: block;
+  }
+
+  .about-me-article {
+    padding-bottom: 5rem;
+  }
+  .about-me-p {
+    max-width: 100%;
+    margin: auto;
+    padding: 1.75rem 1rem 1rem 1rem;
+  }
+
+  .portfolio {
+    padding-top: 2rem;
+  }
+
+  .portfolio div {
+    display: block;
+  }
+
+  .project-card {
+    display: flex !important;
+    justify-content: center;
+    margin: 0.5rem !important;
+    padding: 1rem;
+    max-width: 95%;
+  }
+}
