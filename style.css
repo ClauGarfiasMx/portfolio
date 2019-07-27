@@ -232,7 +232,7 @@ article {
 .typewrite {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
   font-weight: 200;
   color: #868686;
   text-transform: uppercase;
@@ -462,11 +462,18 @@ figure.effect-milo:hover p {
 #contact h2 {
   padding-bottom: 2rem;
 }
+.fa-p {
+  margin: 3rem auto -1rem auto;
+}
+
+.fa-p-link {
+  margin: 0.75rem auto 1rem auto;
+}
 
 footer {
   font-family: "Roboto Condensed", serif;
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 0.65rem;
   height: 12rem;
   background-color: #2c2c2c;
   font-weight: 300;
@@ -477,7 +484,7 @@ footer {
 footer span {
   color: #f40037;
   font-family: "Fauna One", serif;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   margin: auto 0.5rem;
 }
 
